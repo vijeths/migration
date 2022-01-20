@@ -13,7 +13,7 @@ jobs:
       - name: script
         run: sh ./migrate_repo.sh bb_repositories.csv
         
-      - name: printing few lines
+      - name: printing the list
         run: |
           echo Here is the list
           ls -a
