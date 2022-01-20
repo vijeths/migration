@@ -34,7 +34,7 @@ do
 
   if [ "$archive" = "yes" ]; then
     echo "=== archiving repository $gh_org/$gh_repo on GitHub..."
-    curl -X PATCH -u $GH_USERNAME:$GH_PASSWORD https://api.github.com/repos/$gh_org/$gh_repo -d "{\"archived\": true}"
+    curl -X PATCH -u ${{ secrets.GH_USERNAME }}:${{ secrets.GH_PASSWORD } https://api.github.com/repos/$gh_org/$gh_repo -d "{\"archived\": true}"
   fi
 
   cd ..  
