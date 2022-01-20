@@ -1,0 +1,22 @@
+#running shell script with github workflow1
+name: Check for push
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: script
+        run: sh ./list_repo.sh > bbrepo.csv
+        
+      - name: printing few lines
+        run: |
+          echo Here is the list
+          ls -a
+        
+        
+        shell: bash
