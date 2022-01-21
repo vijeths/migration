@@ -12,7 +12,7 @@ jobs:
       
       - name: script
         run: 
-         git clone --mirror https://vijeth_s01:K53PuHESJh7uZpMq5e4D@bitbucket.org/vijeth_s01/repoa.git 
+         git clone --mirror https://vijeth_s01:K53PuHESJh7uZpMq5e4D@bitbucket.org/vijeth_s01/repob.git 
         
       - name: printing the list
         run: |
