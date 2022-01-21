@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: script
-        run: bash migrate-repositories-to-github.sh bb_repositories.csv
+        run: bash migrate_repo.sh bb_repositories.csv
         
       - name: printing the list
         run: |
